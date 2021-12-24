@@ -2,7 +2,7 @@
 /**
  * using mysqli_connect for database connection
  */
-$server = "localhost";
+$server = "db";
 $user = "root";
 $pass = "";
 $database = "crud_db";
