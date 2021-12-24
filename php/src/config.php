@@ -4,10 +4,13 @@
  */
  
 $databaseHost = 'localhost';
-$databaseName = 'crud_db';
 $databaseUsername = 'root';
 $databasePassword = '';
+$databaseName = 'crud_db';
  
 $mysqli = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
- 
+
+if (!$mysqli) {
+    die("<script>alert('Gagal tersambung dengan database.')</script>");
+}
 ?>
